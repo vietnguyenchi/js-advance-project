@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Page</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .coating-product {
+            transition: ease .5s;
+        }
+
+        .product:hover .coating-product {
+            top: 0;
+        }
+
+        .btnList {
+            padding: 8px 14px;
+            background-color: #F9F1E7;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .active {
+            padding: 8px 14px;
+            background-color: #B88E2F;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="py-8 bg-[#F9F1E7]">
+        <div class="container mx-auto md:px-0 px-6">
+            <div class="flex">
+                <div class="flex items-center sm:mr-6 mr-2">
+                    <span class="text-[#9F9F9F] pr-3">Home</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="flex items-center sm:mr-6 mr-2">
+                    <span class="text-[#9F9F9F] pr-3">Shop</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="pl-4 sm:pl-8 py-1 border-l-2 border-[#9F9F9F]">
+                    <span>Asgaard sofa</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-8 pb-16">
+        <div class="container mx-auto md:px-0 px-6">
+            <div class="flex flex-col lg:flex-row lg:gap-20 gap-10">
+                <div class="lg:w-1/2 flex">
+                    <div class="flex flex-col gap-7">
+                        <img src="./img/Group 94.png" alt="">
+                        <img src="./img/Group 98.png" alt="">
+                        <img src="./img/Group 97.png" alt="">
+                        <img src="./img/Group 96.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./img/Group 95.png" alt="">
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div>
+                        <h1 class="text-4xl pb-1">Asgaard sofa</h1>
+                        <h3 class="text-[#9F9F9F] text-2xl">Rs. 250,000.00</h3>
+                        <div class="flex items-center my-4">
+                            <div class="flex gap-1.5 border-r border-[#9F9F9F] pr-4 mr-4">
+                                <img class="w-5 object-cover" src="./img/dashicons_star-filled.png" alt="">
+                                <img class="w-5 object-cover" src="./img/dashicons_star-filled.png" alt="">
+                                <img class="w-5 object-cover" src="./img/dashicons_star-filled.png" alt="">
+                                <img class="w-5 object-cover" src="./img/dashicons_star-filled.png" alt="">
+                                <img class="w-5 object-cover" src="./img/carbon_star-half.png" alt="">
+                            </div>
+                            <p class="text-[#9F9F9F] text-sm">5 Customer Review</p>
+                        </div>
+                        <p>
+                            Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact,
+                            stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended
+                            highs for a sound.
+                        </p>
+                        <div class="mt-5">
+                            <p>Size</p>
+                            <div class="flex gap-4 mt-3">
+                                <div
+                                    class="text-sm w-8 h-8 flex items-center justify-center rounded text-white bg-[#B88E2F]">
+                                    L</div>
+                                <div
+                                    class="text-sm w-8 h-8 flex items-center justify-center rounded text-black bg-[#F9F1E7]">
+                                    XL</div>
+                                <div
+                                    class="text-sm w-8 h-8 flex items-center justify-center rounded text-black bg-[#F9F1E7]">
+                                    XS</div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <p>Color</p>
+                            <div class="flex gap-4 mt-3">
+                                <div class="w-8 h-8 rounded-full bg-[#816DFA]"></div>
+                                <div class="w-8 h-8 rounded-full bg-black"></div>
+                                <div class="w-8 h-8 rounded-full bg-[#B88E2F]"></div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 flex-wrap mt-6">
+                            <div class="h-16 border border-[#9F9F9F] rounded-lg flex items-center justify-center">
+                                <button class="px-5 py-2"><i class="fa-solid fa-minus"></i></button>
+                                <span>01</span>
+                                <button class="px-5 py-2"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <button class="h-16 px-11 border border-black rounded-lg">Add To Cart</button>
+                            <button class="h-16 px-11 border border-black rounded-lg">
+                                <i class="fa-solid fa-plus mr-2"></i>
+                                Compare
+                            </button>
+                        </div>
+                        <div class="text-[#9F9F9F] space-y-2.5 pt-8 border-t border-[#D9D9D9] mt-14">
+                            <div class="flex">
+                                <span class="block w-20">SKU</span>
+                                : SS001
+                            </div>
+                            <div class="flex">
+                                <span class="block w-20">Category</span>
+                                : Sofas
+                            </div>
+                            <div class="flex">
+                                <span class="block w-20">Tags</span>
+                                : Sofa, Chair, Home, Shop
+                            </div>
+                            <div class="flex">
+                                <span class="block w-20">Share</span>
+                                :
+                                <div class="flex gap-6 pl-3">
+                                    <img class="w-6" src="./img/akar-icons_facebook-fill.png" alt="">
+                                    <img class="w-6" src="./img/akar-icons_linkedin-box-fill.png" alt="">
+                                    <img class="w-6" src="./img/ant-design_twitter-circle-filled.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-10 border-t border-b border-[#D9D9D9]">
+        <div class="container mx-auto md:px-0 px-6">
+            <div class="mx-auto mt-4">
+                <!-- Tabs -->
+                <ul id="tabs" class="inline-flex flex-wrap justify-center pt-2 px-1 w-full">
+                    <li class="px-2 md:px-4 md:text-2xl text-lg font-semibold py-2 text-[#B88E2F]">
+                        <a id="default-tab" href="#firstTab">Description</a>
+                    </li>
+                    <li class="px-2 md:px-4 md:text-2xl text-lg text-[#9F9F9F] font-semibold py-2 rounded-t"><a
+                            href="#secondTab">Additional Information</a></li>
+                    <li class="px-2 md:px-4 md:text-2xl text-lg text-[#9F9F9F] font-semibold py-2 rounded-t"><a href="#thirdTab">Reviews
+                            [5]</a></li>
+                </ul>
+                <!-- Tab Contents -->
+                <div id="tab-contents">
+                    <div id="firstTab" class="p-4">
+                        <div class="text-[#9F9F9F] max-w-[1026px] mx-auto">
+                            <p class="mb-6">
+                                Embodying the raw, wayward spirit of rock 'n' roll, the Kilburn portable active stereo
+                                speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes
+                                the show on the road.
+                            </p>
+                            <p>
+                                Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled
+                                engineering.
+                                Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact,
+                                stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended
+                                highs for a sound that is both articulate and pronounced. The analogue knobs allow you
+                                to
+                                fine tune the controls to your personal preferences while the guitar-influenced leather
+                                strap enables easy and stylish travel.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-8 mt-10">
+                            <img src="./img/Group 106.png" alt="">
+                            <img src="./img/Group 107.png" alt="">
+                        </div>
+                    </div>
+                    <div id="secondTab" class="hidden p-4">
+                        Second tab
+                    </div>
+                    <div id="thirdTab" class="hidden p-4">
+                        <!--  -->
+                        <div class="">
+                            <!-- Tabs rating -->
+                            <ul id="tabsRating" class="inline-flex flex-wrap gap-1 w-full">
+                                <li class="px-4 py-1 border border-[#B88E2F] text-[#B88E2F] text-sm mr-2">
+                                    <a id="default-tab" href="#allRating">Tất cả</a>
+                                </li>
+                                <li class="px-4 py-1 border text-sm mr-2 border-[#9F9F9F] text-[#9F9F9F]"><a
+                                        href="#fiveRating">5 Sao (313)</a></li>
+                                <li class="px-4 py-1 border text-sm mr-2 border-[#9F9F9F] text-[#9F9F9F]"><a
+                                        href="#fourRating">4 Sao (213)</a></li>
+                                <li class="px-4 py-1 border text-sm mr-2 border-[#9F9F9F] text-[#9F9F9F]"><a
+                                        href="#threeRating">3 Sao (111)</a></li>
+                                <li class="px-4 py-1 border text-sm mr-2 border-[#9F9F9F] text-[#9F9F9F]"><a
+                                        href="#twoRating">2 Sao (47)</a></li>
+                                <li class="px-4 py-1 border text-sm mr-2 border-[#9F9F9F] text-[#9F9F9F]"><a
+                                        href="#oneRating">1 Sao (21)</a></li>
+                            </ul>
+                            <!-- Tab Contents rating -->
+                            <div id="tab-contentsRating">
+                                <div id="allRating" class="p-4">
+                                    <div class="space-y-8">
+
+                                        <div class="flex gap-4">
+                                            <div>
+                                                <img class="w-10 h-10 rounded-full object-cover"
+                                                    src="https://down-vn.img.susercontent.com/file/7f1ba0e50b418d9de853165c7aecbe9f_tn"
+                                                    alt="">
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <span class="font-semibold text-lg">Asgaard sofa</span>
+                                                    <span class="text-sm text-[#9F9F9F]">2023-05-07 </span>
+                                                </div>
+                                                <div class="flex gap-1 mt-1 mb-3">
+                                                    <img class="w-5" src="./img/dashicons_star-filled.png" alt="">
+                                                    <img class="w-5" src="./img/dashicons_star-filled.png" alt="">
+                                                    <img class="w-5" src="./img/dashicons_star-filled.png" alt="">
+                                                    <img class="w-5" src="./img/dashicons_star-filled.png" alt="">
+                                                    <img class="w-5" src="./img/carbon_star-half.png" alt="">
+                                                </div>
+                                                <p>
+                                                    Hàng rất tốt giao hàng 2-3 ngày shipper thân thiện cho shop 5 sao
+                                                    lần sau sẽ ủng hộ shop tiếp
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex gap-4">
+                                            <div>
+                                                <img class="w-10 h-10 rounded-full object-cover"
+                                                    src="https://down-vn.img.susercontent.com/file/7f1ba0e50b418d9de853165c7aecbe9f_tn"
+                                                    alt="">
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <span class="font-semibold text-lg">Asgaard sofa</span>
+                                                    <span class="text-sm text-[#9F9F9F]">2023-05-07 </span>
+                                                </div>
+                                                <div class="flex gap-1 mt-1 mb-3">
+                                                    <img class="w-5" src="./img/dashicons_star-filled.png" alt="">
+                                                    <img class="w-5" src="./img/dashicons_star-filled.png" alt="">
+                                                    <img class="w-5" src="./img/dashicons_star-filled.png" alt="">
+                                                    <img class="w-5" src="./img/dashicons_star-filled.png" alt="">
+                                                    <img class="w-5" src="./img/carbon_star-half.png" alt="">
+                                                </div>
+                                                <p>
+                                                    Hàng rất tốt giao hàng 2-3 ngày shipper thân thiện cho shop 5 sao
+                                                    lần sau sẽ ủng hộ shop tiếp
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-4">
+                                            <div>
+                                                <img class="w-10 h-10 rounded-full object-cover"
+                                                    src="https://down-vn.img.susercontent.com/file/7f1ba0e50b418d9de853165c7aecbe9f_tn"
+                                                    alt="">
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <span class="font-semibold text-lg">Asgaard sofa</span>
+                                                    <span class="text-sm text-[#9F9F9F]">2023-05-07 </span>
+                                                </div>
+                                                <div class="flex gap-1 mt-1 mb-3">
+                                                    <img class="w-5" src="./img/dashicons_star-filled.png" alt="">
+                                                    <img class="w-5" src="./img/dashicons_star-filled.png" alt="">
+                                                    <img class="w-5" src="./img/dashicons_star-filled.png" alt="">
+                                                    <img class="w-5" src="./img/dashicons_star-filled.png" alt="">
+                                                    <img class="w-5" src="./img/carbon_star-half.png" alt="">
+                                                </div>
+                                                <p>
+                                                    Hàng rất tốt giao hàng 2-3 ngày shipper thân thiện cho shop 5 sao
+                                                    lần sau sẽ ủng hộ shop tiếp
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="fiveRating" class="hidden p-4">
+                                    5 Sao
+                                </div>
+                                <div id="fourRating" class="hidden p-4">
+                                    4 Sao
+                                </div>
+                                <div id="threeRating" class="hidden p-4">
+                                    3 Sao
+                                </div>
+                                <div id="twoRating" class="hidden p-4">
+                                    2 Sao
+                                </div>
+                                <div id="oneRating" class="hidden p-4">
+                                    1 Sao
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-12 pb-20">
+        <div class="container mx-auto md:px-0 px-6">
+            <h2 class="text-4xl text-center mb-6">Related Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="product xl:h-[446px] relative bg-[#F4F5F7] overflow-hidden">
+                    <ul>
+                        <li
+                            class="w-12 h-12 absolute rounded-full bg-[#E97171] flex justify-center items-center top-6 right-6">
+                            -30%
+                        </li>
+                    </ul>
+                    <img class="xl:w-max" width="100%" src="img/product1.png" alt="">
+                    <div class="p-4">
+                        <h2 class="font-medium text-2xl my-1">Syltherine</h2>
+                        <span class="text-gray-500">Stylish cafe chair</span>
+                        <div class="mt-1 flex flex-wrap-reverse items-baseline">
+                            <p class="font-medium text-xl mr-4">RP 2.500.000</p>
+                            <span class="text-gray-300"><strike>RP 3.500.000</strike></span>
+                        </div>
+                    </div>
+                    <div class="coating-product absolute bg-[#3A3A3A] opacity-70 w-full h-full top-full left-0
+                    flex items-center justify-center">
+                        <div class="w-4/5 text-center">
+                            <button class="w-4/5 h-[48px] bg-white text-[#B88E2F] font-medium">Add to cart</button>
+                            <div class="flex items-center justify-between mt-3 gap-2">
+                                <div class="text-white">
+                                    <a href="#">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        <span>Share</span>
+                                    </a>
+
+                                </div>
+                                <div class="text-white">
+                                    <a href="#">
+                                        <i class="fa-solid fa-right-left"></i>
+                                        <span>Compare</span>
+                                    </a>
+                                </div>
+                                <div class="text-white">
+                                    <a href="#">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <span>Like</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product xl:h-[446px] relative bg-[#F4F5F7] overflow-hidden">
+                    <ul>
+                        <li
+                            class="w-12 h-12 absolute rounded-full bg-[#E97171] flex justify-center items-center top-6 right-6">
+                            -30%
+                        </li>
+                    </ul>
+                    <img class="xl:w-max" width="100%" src="img/product1.png" alt="">
+                    <div class="p-4">
+                        <h2 class="font-medium text-2xl my-1">Syltherine</h2>
+                        <span class="text-gray-500">Stylish cafe chair</span>
+                        <div class="mt-1 flex flex-wrap-reverse items-baseline">
+                            <p class="font-medium text-xl mr-4">RP 2.500.000</p>
+                            <span class="text-gray-300"><strike>RP 3.500.000</strike></span>
+                        </div>
+                    </div>
+                    <div class="coating-product absolute bg-[#3A3A3A] opacity-70 w-full h-full top-full left-0
+                    flex items-center justify-center">
+                        <div class="w-4/5 text-center">
+                            <button class="w-4/5 h-[48px] bg-white text-[#B88E2F] font-medium">Add to cart</button>
+                            <div class="flex items-center justify-between mt-3 gap-2">
+                                <div class="text-white">
+                                    <a href="#">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        <span>Share</span>
+                                    </a>
+
+                                </div>
+                                <div class="text-white">
+                                    <a href="#">
+                                        <i class="fa-solid fa-right-left"></i>
+                                        <span>Compare</span>
+                                    </a>
+                                </div>
+                                <div class="text-white">
+                                    <a href="#">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <span>Like</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product xl:h-[446px] relative bg-[#F4F5F7] overflow-hidden">
+                    <ul>
+                        <li
+                            class="w-12 h-12 absolute rounded-full bg-[#E97171] flex justify-center items-center top-6 right-6">
+                            -30%
+                        </li>
+                    </ul>
+                    <img class="xl:w-max" width="100%" src="img/product1.png" alt="">
+                    <div class="p-4">
+                        <h2 class="font-medium text-2xl my-1">Syltherine</h2>
+                        <span class="text-gray-500">Stylish cafe chair</span>
+                        <div class="mt-1 flex flex-wrap-reverse items-baseline">
+                            <p class="font-medium text-xl mr-4">RP 2.500.000</p>
+                            <span class="text-gray-300"><strike>RP 3.500.000</strike></span>
+                        </div>
+                    </div>
+                    <div class="coating-product absolute bg-[#3A3A3A] opacity-70 w-full h-full top-full left-0
+                    flex items-center justify-center">
+                        <div class="w-4/5 text-center">
+                            <button class="w-4/5 h-[48px] bg-white text-[#B88E2F] font-medium">Add to cart</button>
+                            <div class="flex items-center justify-between mt-3 gap-2">
+                                <div class="text-white">
+                                    <a href="#">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        <span>Share</span>
+                                    </a>
+
+                                </div>
+                                <div class="text-white">
+                                    <a href="#">
+                                        <i class="fa-solid fa-right-left"></i>
+                                        <span>Compare</span>
+                                    </a>
+                                </div>
+                                <div class="text-white">
+                                    <a href="#">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <span>Like</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product xl:h-[446px] relative bg-[#F4F5F7] overflow-hidden">
+                    <ul>
+                        <li
+                            class="w-12 h-12 absolute rounded-full bg-[#E97171] flex justify-center items-center top-6 right-6">
+                            -30%
+                        </li>
+                    </ul>
+                    <img class="xl:w-max" width="100%" src="img/product1.png" alt="">
+                    <div class="p-4">
+                        <h2 class="font-medium text-2xl my-1">Syltherine</h2>
+                        <span class="text-gray-500">Stylish cafe chair</span>
+                        <div class="mt-1 flex flex-wrap-reverse items-baseline">
+                            <p class="font-medium text-xl mr-4">RP 2.500.000</p>
+                            <span class="text-gray-300"><strike>RP 3.500.000</strike></span>
+                        </div>
+                    </div>
+                    <div class="coating-product absolute bg-[#3A3A3A] opacity-70 w-full h-full top-full left-0
+                    flex items-center justify-center">
+                        <div class="w-4/5 text-center">
+                            <button class="w-4/5 h-[48px] bg-white text-[#B88E2F] font-medium">Add to cart</button>
+                            <div class="flex items-center justify-between mt-3 gap-2">
+                                <div class="text-white">
+                                    <a href="#">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        <span>Share</span>
+                                    </a>
+
+                                </div>
+                                <div class="text-white">
+                                    <a href="#">
+                                        <i class="fa-solid fa-right-left"></i>
+                                        <span>Compare</span>
+                                    </a>
+                                </div>
+                                <div class="text-white">
+                                    <a href="#">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <span>Like</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <button class="h-12 w-56 border text-base font-semibold mr-2 border-[#B88E2F] text-[#B88E2F]">Show More</button>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="h-36"></div> -->
+</body>
+
+
+
+<script>
+    let tabsContainer = document.querySelector("#tabs");
+
+    let tabTogglers = tabsContainer.querySelectorAll("#tabs a");
+
+    tabTogglers.forEach(function (toggler) {
+        toggler.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            let tabName = this.getAttribute("href");
+
+            let tabContents = document.querySelector("#tab-contents");
+
+            for (let i = 0; i < tabContents.children.length; i++) {
+                tabTogglers[i].parentElement.classList.remove("text-[#B88E2F]");
+                tabTogglers[i].parentElement.classList.add("text-[#9F9F9F]");
+                tabContents.children[i].classList.remove("hidden");
+                if ("#" + tabContents.children[i].id === tabName) {
+                    continue;
+                }
+                tabContents.children[i].classList.add("hidden");
+
+            }
+            e.target.parentElement.classList.add("text-[#B88E2F]");
+        });
+    });
+
+    // rating
+    let tabsContainerRating = document.querySelector("#tabsRating");
+    console.log("🚀 ~ file: detailPage.html:240 ~ tabsContainerRating:", tabsContainerRating)
+
+    let tabTogglersRating = tabsContainerRating.querySelectorAll("#tabsRating a");
+    console.log("🚀 ~ file: detailPage.html:243 ~ tabTogglersRating:", tabTogglersRating)
+
+    tabTogglersRating.forEach(function (toggler) {
+        toggler.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            let tabName = this.getAttribute("href");
+            console.log("🚀 ~ file: detailPage.html:250 ~ tabName:", tabName)
+
+            let tabsContainerRating = document.querySelector("#tab-contentsRating");
+
+            for (let i = 0; i < tabsContainerRating.children.length; i++) {
+                tabTogglersRating[i].parentElement.classList.remove("border-[#B88E2F]", "text-[#B88E2F]");
+                tabTogglersRating[i].parentElement.classList.add("text-[#9F9F9F]", "border-[#9F9F9F]");
+                tabsContainerRating.children[i].classList.remove("hidden");
+                if ("#" + tabsContainerRating.children[i].id === tabName) {
+                    continue;
+                }
+                tabsContainerRating.children[i].classList.add("hidden");
+
+            }
+            e.target.parentElement.classList.add("border-[#B88E2F]", "text-[#B88E2F]");
+        });
+    });
+</script>
+
+</html>
