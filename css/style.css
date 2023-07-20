@@ -14,6 +14,7 @@
     --color-text:#3A3A3A;
     --color-text2:#9F9F9F;
     --color-text-main1:#666666;
+    --color-a: #3A3A3A;
 }
 body{
     font-family: 'Kablammo', cursive;
@@ -21,7 +22,7 @@ body{
     /* font-family: 'Roboto', sans-serif; */
 }
 .page{
-    width: 1920px;
+    width: 1440px;
     height:auto;
     background-color: var(--background-color);
     display: grid;
@@ -181,21 +182,27 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+   
 }
 .Our_Products{
+    position: relative;
     width: 25%;
     height: 45%;
     flex: 0 0 23.66667%;
     max-width:25.66667%;
     background-color: var(--background-color-main2);
+    overflow: hidden;
+   
+}
+.Our_Products:hover .overlay{
+    bottom: 0;
 }
 .Our_Products>img{
     width: 100%;
     height: 70%;
 }
 .Our_Products>h3,h6, .price{
-    margin:3% 2% 2% 5%;
+    margin:2% 2% 2% 5%;
 }
 .Our_Products>h3{
     font-size: 24px;
@@ -214,6 +221,55 @@ body{
 }
 .price>del{
     font-size: 16px;
+}
+.overlay{
+    background-color: var(--color-a);
+    width: 100%;
+    height:  100%;
+    position:absolute;
+    bottom: -100%;
+    left: 0;
+    opacity: 0.7200000286102295;
+background: var(--color-gray-1, #3A3A3A);
+    transition: ease .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.overlay_nav{
+    width: 80%;
+    height: max-content;
+ 
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+}
+.overlaybutton{
+    width: 100%;
+    height: 20%;
+ 
+    display: flex;
+    justify-content: center;
+}
+.overlaybutton>button{
+    padding:5% 30% ;
+    background-color: var(--background-color);
+    color:var(--color-text-header);
+    font-size: 16px;
+    font-weight: 600;
+    border:none;
+}
+.Nav_items{
+    display: flex;
+    align-items: center;
+    margin-top:30px;
+    
+}
+.Nav_items>p{
+    color:var(--color-text-button);
+    margin-left:5px;
 }
 .content_main2>button{
     text-align: center;
@@ -234,6 +290,7 @@ body{
     padding: 2% 0% 2% 5%;
     display: flex;
     justify-content: space-between;
+    
 }
 .content_main3_Beautiful_room {
     width: 30%;
@@ -259,12 +316,18 @@ body{
 .content_main3_img {
     width: 30%;
     height: 100%;
-    background-image: url("img/content_main3_img.png");
+
+}
+.content_main3_img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
  .content_main3_sidle{
     width: 30%;
     height: 90%;
     position: relative;
+
 }
 .next{
     position: absolute;
